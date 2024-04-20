@@ -17,11 +17,19 @@
 }
 
 .header {
+    margin-top: 20px;
     border-radius: 6px;
     background-color: var(--primary-color);
     color: var(--text-color);
     font-family: var(--font-headers);
     font-size: 1.4em;
+}
+
+.movie-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
 }
 
 .user-input {
@@ -47,19 +55,32 @@
     gap: 10px;
 }
 
+.movie-none {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 18px;
+}
+
 .movie {
   display: flex;
   flex-direction: row;
-  gap: 18px;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 10px;
 }
 
 .movie-poster img{
   border-radius: 8px;
-  width: 200px;
-  height: 300px;
+  object-fit: contain;
+  max-width: 40vw;
+  max-height: 60vh;
+  /* width: 400px;
+  height: 360px; */
 }
 
 .movie-info {
+  color: var(--text-color);
   background-color: var(--secondary-color);
   border-radius: 8px;
   padding: 24px;

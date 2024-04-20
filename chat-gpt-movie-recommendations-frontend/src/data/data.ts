@@ -1,5 +1,5 @@
-// interface for movie data. used in UserInput.tsx for state management so that the state can be either a movie or not found
-export interface Movie {
+// // interface for movie data. used in UserInput.tsx for state management so that the state can be either a movie or not found
+export interface MovieObject {
     Title: string;
     Year: string;
     Released: string;
@@ -17,7 +17,7 @@ export interface Movie {
     Poster: string;
     Production: string;
     Rated: string;
-    Ratings: [];
+    Ratings: Array<{ Source: string; Value: string }>;
     Response: string;
     Type: string;
     Website: string;
